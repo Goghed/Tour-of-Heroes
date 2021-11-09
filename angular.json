@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "4059ac49-8184-4bc3-b08e-7624f8b71084"
+    "analytics": "d5c5cd87-fe39-4ef4-94c9-de02a1f7e84f"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-app2": {
+    "angular-tour-of-heroes": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-app2",
+            "outputPath": "dist/angular-tour-of-heroes",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "my-app2:build:production"
+              "browserTarget": "angular-tour-of-heroes:build:production"
             },
             "development": {
-              "browserTarget": "my-app2:build:development"
+              "browserTarget": "angular-tour-of-heroes:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-app2:build"
+            "browserTarget": "angular-tour-of-heroes:build"
           }
         },
         "test": {
@@ -105,5 +105,5 @@
       }
     }
   },
-  "defaultProject": "my-app2"
+  "defaultProject": "angular-tour-of-heroes"
 }

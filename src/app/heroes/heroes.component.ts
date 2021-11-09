@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Hero } from '../app.hero';
+import { Hero } from '../hero';
 
 @Component({
   selector: 'app-heroes',
@@ -9,7 +9,7 @@ import { Hero } from '../app.hero';
 export class HeroesComponent implements OnInit {
   hero: Hero = {
     id: 1,
-    name: 'Windstorm'
+    name: 'Ed Carlos'
   };
 
   constructor() { }
